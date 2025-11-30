@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 1 - Interactive Elements</title>
+
+    <style>
+
+        /* Step 1: Hover Button */
+        .btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: red;
+        }
+
+        /* Step 2: Dropdown Menu */
+        .dropbtn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 120px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Step 3: Zoom Image */
+        .zoomimage {
+            transition: 0.5s;
+            margin-top: 20px;
+            width: 200px; /* optional */
+        }
+
+        .zoomimage:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Step 1: Hover Button</h2>
+    <button class="btn">Hover Button</button>
+
+    <h2>Step 2: Dropdown Menu</h2>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <h2>Step 3: Zoom Image</h2>
+    <img src="img1.png" class="zoomimage">
+
+</body>
+</html>
